@@ -146,10 +146,6 @@ def sign_up(request):
     return render(request,'sign_up.html')
 
 
-@login_required
-def logout_view(request):
-    return render(request, 'home.html')
-
 
 def logout_view(request):
     logout(request)
